@@ -1,0 +1,362 @@
+html,
+body{
+    /* width: 100%; */
+    overflow-x: hidden;
+    color: black;
+}
+
+a {
+    outline: none !important;
+    text-decoration: none !important;
+}
+
+#intro{
+    /* margin-top: -80px; */
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.85),rgb(0, 0, 0)),url(../img/content/coffe.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+}
+
+.bg-gradient{
+    background: rgba(red, green, blue, alpha)
+}
+
+.bg-soft-dark{
+    background-color: rgba(32, 32, 32, 0.863);
+    color:white;
+}
+
+.h2-white{
+    color: #ffffff;
+}
+
+.a-white{
+    color: #f2f2f2;
+}
+
+.p-white{
+    color: #f6f6f6;
+}
+
+.bg-black-1{
+    background-color: #1d1d1d;
+}
+
+.bg-black-2{
+    background-color: #212121;
+}
+
+.bg-white-1{
+    background-color: #ffffff;
+}
+
+.bg-white-2{
+    background-color: #fafafa;
+}
+
+.bg-youtube{
+    background: url(../img/UNCLE-JO/uncle.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.bg-qoutes{
+    background: url(../img/UNCLE-JO/uncle.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.bg-flat{
+    background: url(../img/UNCLE-JO/uncle.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.bg-pattern{
+    background: url(../img/content/pattern1.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.text-white{
+    color: #ffffff;
+}
+
+.text-red{
+    color: #da2b2b;
+}
+
+.text-black{
+    color: #3b3b3b;
+}
+
+.text-qoutes-title{
+    font-weight: 300;
+    letter-spacing: 2px;
+
+}
+
+.img-workshop{
+    position: relative;
+    width: 600px;
+}
+
+.title-padding{
+    padding-bottom: 50px;
+}
+
+.border-section{
+    border-top: 1px solid #adadad;
+    border-bottom: 1px solid #adadad;
+}
+
+.gambar-each{
+    background-size: cover;
+    width: 350px;
+    background-repeat: no-repeat;
+    height: 290px;
+}
+
+.section-padding{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.row-padding{
+    padding-bottom: 50px;
+}
+
+.underline{
+    background-color: #007bff;
+    width: 80px;
+    height: 2px;
+    margin: 5px auto 0 auto;
+}
+
+.bt-qoutes{
+    border-top: 2px #fff solid;
+    padding-top: 30px;
+}
+
+.bb-qoutes{
+    border-bottom: 2px #fff solid;
+    padding-bottom: 30px;
+}
+
+.icon-coffee{
+    width: 100px;
+}
+
+.schedule-img{
+    display: block;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.schedule-col{
+    background-color: #f5f5f5;
+    border: 1px solid #dddddd;
+    padding: 20px;
+}
+
+.bg-coffe{
+    position: relative;
+    background-position: right;
+    background-image: url(../img/ui-images/coffe-work-ui.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.content-ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.content-ul li{
+    list-style: none;
+}
+
+.schedule-ul{
+    display: inline;
+    display: inline-table;
+}
+
+.schedule-ul li:nth-child(1){
+    padding-right: 10px;
+    vertical-align: text-top;
+}
+
+.schedule-ul li{
+    display: table-cell;
+}
+
+.schedule-ul p{
+    color: #777777;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.img-custom{
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+
+.readmore{
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    text-transform: capitalize;
+}
+
+.readmore:hover {
+    color: #da2b2b;
+}
+
+.fa-calendar-alt{
+    font-size: 25px;
+}
+
+.content-top-space{
+    padding-top: 15px;
+}
+
+.progress{
+    z-index: 200;
+    position: fixed;
+    top: 0px;
+    height: 5px;
+    width: 100%;
+}
+
+
+.profile-img{
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.circle-img{
+    width: auto;
+    height: 100%;
+    margin-left: -100px;
+}
+
+.describe-img{
+    padding-top: 30px;
+    margin-left: 50px;
+}
+
+.content-profile{
+    padding-top: 30px;
+}
+
+.owl-prev{
+    font-size: 50px;
+}
+
+.frame-yt{
+    width: 380px;
+    height: 350px;
+}
+.frame-yt2{
+    width: 480px;
+    height: 350px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .frame-yt{
+        width: 510px;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .frame-yt{
+        width: 560px;
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .frame-yt{
+        width: 710px;
+        height: 400px;
+    }
+    .bg-coffe{
+        position: relative;
+        background-position: center;
+        background-image: url(../img/background/coffe-work-ui.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .frame-yt{
+        width: 320px;
+        height: 400px;
+    }
+    .frame-yt2{
+        width: 330px;
+        height: 300px;
+    }
+    .bg-coffe{
+        position: relative;
+        background-position: center;
+        background-image: url(../img/background/coffe-work-ui.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .img-workshop{
+        position: relative;
+        width: 350px;
+    }
+
+    .cerita-text{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .map-row{
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .col-md-push-6 {
+        left: 50%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .col-md-pull-6 {
+        right: 50%;
+    }
+}
