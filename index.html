@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae</title>
+    <title>muhmunt - Web Developer</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
 </head>
 <body>
     
     <div class="position-relative">
         <!-- shape Hero -->
         <section class="section section-lg pb-250 view" id="intro">
+          <div class="hero-wave">
             <div>
                 <span></span>
                 <span></span>
@@ -27,33 +29,156 @@
             <div class="container py-lg-md d-flex">
                 <div class="col px-0">
                   <div class="row mt-3 d-flex justify-content-center">
-                    <div class="col-lg-10 text-center">
-                      <img class="mx-auto" style="width: 100px;" src="img/UNCLE-JO/logo1.png">
-                        <h1 class="display-2 text-white">
-                            Bisnis Kopi 2.0
+                    <div class="col-lg-10 text-center" style="padding-top: 200px;">
+                      
+                        <h1 class="display-5 text-white">
+                            Muhammad Muntasir
                         </h1>
-                        <span class="display-3 text-white font-weight-normal">
-                            Cara Membangun Kedai Kopi Dengan Budget Minim
-                        </span>
-                        {{-- <p class="lead text-white">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus culpa ab dolores necessitati.
-                        </p> --}}
-                      <div class="btn-wrapper pt-3">
-                        <a href="#register" id="btn-register" class="btn btns-gradient-red rounded text-white">Daftar Sekarang</a>
+                         <p class="lead text-white">
+                            Iam a web developer with laravel & react js
+                        </p> 
+                      <div class="btn-wrapper pt-3" style="padding-bottom:130px">
+                        <a href="#more" id="btn-more" class="btn bg-blue rounded text-white">More...</a>
                       </div>
 
                     </div>
                   </div>
                 </div>
             </div>
-            <!-- SVG separator -->
-            <div class="separator separator-bottom separator-skew">
-                <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-              <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
-                </svg>
-            </div>
+          </div>
         </section>
     </div>
 
+    <section class="py-5"  >
+      <div class="container mt-4">
+          <div class="row justify-content-center">
+              <div class="col-lg-8 text-center">
+                  <img src="img/content/profile.jpeg" alt="muhmunt" class="img-fluid rounded-circle w-25 mb-4">
+                  
+                  <h1>Muhammad Muntasir</h1>
+  
+                  <p class="h5 mt-3">I build websites.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="py-5 ">
+
+    <div class="container mt-4">
+      <div class="row justify-content-center d-none d-md-block p-5" style="padding:80px">
+        <div class="col-md-8 text-center mx-auto">
+          <h1 class="">Projects</h1>
+        </div>      
+      <!-- Swiper -->
+      <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(img/content/bisniskopi.png);width: 100px;height: 500px;"></div>
+          <div class="swiper-slide" style="background-image:url(img/content/mymindstores.png);width: 100px;height: 500px;"></div>
+          <div class="swiper-slide" style="background-image:url(img/content/pelador.png);width: 100px;height: 500px;"></div>
+          <div class="swiper-slide" style="background-image:url(img/content/eventstudent.png);width: 100px;height: 500px;"></div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+      </div>
+      <div class="swiper-container gallery-thumbs" >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(img/content/bisniskopi.png);width: 170px;height: 100px;"></div>
+          <div class="swiper-slide" style="background-image:url(img/content/mymindstores.png);width: 170px;height: 100px;"></div>
+          <div class="swiper-slide" style="background-image:url(img/content/pelador.png);width: 170px;height: 100px;"></div>
+          <div class="swiper-slide" style="background-image:url(img/content/eventstudent.png);width: 170px;height: 100px;"></div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row mx-auto">
+        <h1 class="d-block d-sm-none">Projects</h1>
+        <div class="col-md-6 p-1">
+          <div class="card border-0 border-none">
+            <img class="card-img-top image" style="width: 100%;" src="img/content/bisniskopi.png" alt="">            
+            <div class="overlay">
+                <div class="text">
+                  <a href="https://www.github.com/muhmunt/webcafe" target="_blank" class="">Website BisnisKopi.com</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-6 p-1">
+          <div class="card border-0 border-none">
+            <img class="card-img-top image" style="width: 100%;" src="img/content/pelador.png" alt="">            
+            <div class="overlay">
+              <div class="text">
+                <a href="https://www.github.com/muhmunt/app_lap-masyarakat" target="_blank" class="">Website Pengaduan & Pelaporan Masyarakat</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 p-1">
+          <div class="card border-0 border-none">
+            <img class="card-img-top image" style="width: 100%;" src="img/content/eventstudent.png" alt="">            
+            <div class="overlay">
+              <div class="text">
+                <a href="https://www.github.com/muhmunt/app_monitoring" target="_blank" class="">Website EventStudent</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6  p-1">
+          <div class="card border-0 border-none">
+            <img class="card-img-top image" style="width: 100%;" src="img/content/mymindstores.png" alt="">            
+            <div class="overlay">
+              <div class="text">
+                <a href="https://www.github.com/muhmunt/mymindstores target="_blank" class="">Website MyMindstores</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+          spaceBetween: 10,
+          slidesPerView: 4,
+          freeMode: true,
+          watchSlidesVisibility: true,
+          watchSlidesProgress: true,
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+          spaceBetween: 10,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          thumbs: {
+            swiper: galleryThumbs
+          }
+        });
+
+        
+        $('#btn-more').on('click',function(e){
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $('#more').offset().top,
+            },900,'linear');
+        });
+
+      });
+
+
+    
+    </script>
 </body>
 </html>
