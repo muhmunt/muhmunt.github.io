@@ -31,6 +31,10 @@ a {
     color: rgba(245, 245, 245, 0.329);
 }
 
+.bg-soft-grey{
+    background-color: rgb(235, 235, 235);
+}
+
 .hero-wave{
     content: '';
     height: 100vh;
