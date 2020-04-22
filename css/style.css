@@ -142,3 +142,9 @@ h1,h2,h3{
   .gallery-thumbs .swiper-slide-thumb-active {
     opacity: 1;
   }
+
+  @media (max-width: 770px){
+    .visible-md{
+      display: none;
+    }
+  }
