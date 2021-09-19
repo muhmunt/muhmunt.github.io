@@ -59,6 +59,62 @@ h1,h2,h3{
     -o-background-size:cover;
 }
 
+.font-pfd{
+	font-family: 'Playfair Display', serif;
+}
+
+.font-hwr{
+	font-family: 'Sofia', cursive;
+}
+
+.line-height15{
+  line-height: 1.5;
+}
+
+.rotate--180deg {
+  transform: rotate(
+-180deg);
+}
+.writing-tb-rl {
+  writing-mode: tb-rl;
+}
+
+.break-after {
+  page-break-after: always;
+}
+
+.text-dark-blue{
+  color: rgb(11, 11, 165)
+}
+
+.bg-body{
+  background-color: rgb(45, 45, 68);
+}
+
+.bg-white-orange{
+  background-color: #fbf2f0;
+}
+
+.w-210mm{
+  width: 210mm;
+}
+
+.h-296mm {
+  height: 296mm;
+}
+.my-10mm {
+  margin: 10mm auto;
+}
+.shadow-lg-outer {
+  box-shadow: 0 0.5mm 6mm rgb(0 0 0 / 20%);
+}
+.shadow-lg-outer {
+  box-shadow: 0 0.5mm 6mm rgb(0 0 0 / 20%);
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+
 #find{
     /* margin-top: -80px; */
     background: linear-gradient(to right, #0575e6, #021b79);
