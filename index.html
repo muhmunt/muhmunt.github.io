@@ -19,49 +19,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Sofia&family=Roboto+Mono&display=swap" rel="stylesheet">
 
     <script src="js/jquery.min.js"></script>
-    <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js">
-    </script>
-    <script>
-        window.onload = function(){
-            document.addEventListener("contextmenu", function(e){
-                e.preventDefault();
-                if(event.keyCode == 123){
-                    disableEvent(e);
-                }
-            }, false);
-        }
-
-        $(document).contextmenu(function() {return false;});
-        
-        url = "file:///D:/Agam/Code/CV/muhmunt.github.io/doc/cv.pdf";
-        var thePdf = null;
-        var scale = 1;
-
-        pdfjsLib.getDocument().then(function(pdf) {
-        thePdf = pdf;
-        viewer = document.getElementById("pdf-viewer");
-        for(page = 1; page <= pdf.numPages; page++) {
-        canvas = document.createElement("canvas");
-        canvas.className = "pdf-page-canvas";
-        canvas.style.width = "100%";
-        canvas.style.height = "auto";
-        viewer.appendChild(canvas);
-        renderPage(page, canvas);
-        }
-        });
-
-        function renderPage(pageNumber, canvas) {
-            thePdf.getPage(pageNumber).then(function(page) {
-            viewport = page.getViewport(scale);
-            canvas.height = viewport.height;
-            canvas.width = viewport.width;
-            page.render({canvasContext: canvas.getContext("2d"), viewport: viewport});
-        });
-        }
-        
-        
-    </script>
 </head>
 <body class="bg-body">
   
@@ -69,8 +26,8 @@
     <div class="book">
       <div class="page">
         <div class="text-dark-blue font-hwr pt-3 pl-3 text-sm">Muhammad Muntasir</div>
-        <div class="subpage" id='editor-container'>
-          <div class="row" style="margin-top: 20%;">
+        <div class="subpage" style="position: relative;" id='editor-container'>
+          <div class="row" style="margin-top: 15%;">
             <div class="col-md-10 mx-auto">
               <div class="row">
                 <div class="col-1">
@@ -99,18 +56,51 @@
 
                       <div class="font-mono" style="margin-top: 20%;">
                         <h5 class="text-sm text-dark-blue">Find me</h5>
-                        <div class="text-p">Linkedin: <a target="_blank" href="https://www.linkedin.com/in/muhammad-muntasir-138a4119a/">Muhammad Muntasir</a> </div>
-                        <div class="text-p">Github: <a target="_blank" href="https://www.github.com/muhmunt">muhmunt</a></div>
-                        <div class="text-p">Instagram: <a target="_blank" href="https://www.instagram.com/agam.am">@agam.am</a></div>
+                        <div class="text-p">Linkedin: <a target="_blank" class="text-dark-blue" href="https://www.linkedin.com/in/muhammad-muntasir-138a4119a/">Muhammad Muntasir</a> </div>
+                        <div class="text-p">Github: <a target="_blank" class="text-dark-blue" href="https://www.github.com/muhmunt">muhmunt</a></div>
+                        <div class="text-p">Instagram: <a target="_blank" class="text-dark-blue" href="https://www.instagram.com/agam.am">@agam.am</a></div>
                       </div>
                     </div>
                   </div>
+                  <div class="row" style="margin-top: 15%; text-align: left;">
+                    <div class="col-md-10 col-10">
+                      <div class="text-dark-blue font-mono">EDUCATIONAL BACKGROUND</div>
+                      <div class="text-left font-mono">
+                        <div class="text-p">-- Software Engineering</div>
+                        <div class="text-p">Sekolah Menengah Kejuruan (SMK) Wikrama Bogor</div>
+                        <div class="text-p">-- System Information</div>
+                        <div class="text-p"> Sekolah Tinggi Management Informatika dan Komputer (STMIK) Dharma Negara</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 15%;">
+                
+                
+                <div class="col-8 col-md-8 mx-auto">
+                  <div class="font-mono text-left">
+                    <div class="text-sm">
+                      <i>" <span style="border-top: solid 3px #4a5568">Lets</span>  discuss with me I can help you in the field of battle and start fight the <span style="border-bottom: solid 3px #4a5568">world.</span>"</i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1 col-md-1 mx-auto">
+                  <div class="float-right writing-tb-rl rotate--180deg text-sm text-right" style="border-right: solid 2px #021c79ad;">Curriculum Vitae - 01 </div>
+                </div>
+                <div class="col-md-1">
 
                 </div>
+                
               </div>
             </div>
           </div>
+          <!-- <div>
+            <img src="./img/content/Taieri.svg" style="width: 24%;position: absolute;right: 0;bottom: 0; padding-top: 60rem; padding-right: 6.5rem;" alt="">
+          </div> -->
         </div>
+
+
       </div>
     </div>
   </div>
