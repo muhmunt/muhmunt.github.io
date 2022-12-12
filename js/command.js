@@ -139,7 +139,7 @@ profile = [
 
 help = [
   "<br>",
-  '<span class="command">whois</span>                     Who is Forrest?',
+  '<span class="command">whois</span>                     Who is Muhammad Muntasir?',
   '<span class="command">whoami</span>                    Who are you?',
   '<span class="command">social</span>                    Display social networks',
   '<span class="command">profile</span>                   Display profile',
