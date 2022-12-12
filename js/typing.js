@@ -1,5 +1,5 @@
-function $(elid) {
-    return document.getElementById(elid);
+function $(defined) {
+    return document.getElementById(defined);
   }
   
 var cursor;
@@ -10,7 +10,7 @@ function init() {
   cursor.style.left = "0px";
 }
 
-function nl2br(txt) {
+function removeing(txt) {
   return txt.replace(/\n/g, '');
 }
 
@@ -19,7 +19,7 @@ function typeIt(from, e) {
   var w = $("typer");
   var tw = from.value;
   if (!pw){
-    w.innerHTML = nl2br(tw);
+    w.innerHTML = removeing(tw);
   }
 }
 
