@@ -1,41 +1,301 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Muntasir | Terminal</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/terminal.css" />
-    <link rel="icon" type="image/x-icon" href="./img/content/Taieri.svg" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Muhammad Muntasir, Backend Engineer</title>
+<meta name="description" content="Backend engineer in Bogor building real-time, AI-integrated systems in Go. WebSocket, WebRTC, Kafka, RabbitMQ and Elasticsearch in production." />
+<meta property="og:title" content="Muhammad Muntasir, Backend Engineer" />
+<meta property="og:description" content="Real-time, AI-integrated systems in Go. Take the stack apart and try the systems yourself." />
+<meta property="og:type" content="profile" />
+<meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+<link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+<script>
+  // Set theme and motion flags before first paint so nothing flashes.
+  (function () {
+    var d = document.documentElement, t = null
+    try { t = localStorage.getItem('theme') } catch (e) {}
+    d.dataset.theme = t || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+    d.classList.add('js')
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('calm')
+  })()
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Muhammad Muntasir","jobTitle":"Backend Engineer","email":"mailto:muhmunt@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Bogor","addressCountry":"ID"},"sameAs":["https://www.linkedin.com/in/muhammadmuntasir/","https://github.com/muhmunt"]}
+</script>
+  <script type="module" crossorigin src="./assets/index-DpQo_pkf.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-ZHaFAXen.css">
 </head>
 <body>
-        <div class="main h-100">
-          <div class="border-blink">
-            <div class="h-100" style="overflow-y: auto;" id="container">
-              <div id="terminal">
-                <a id="before"></a>
-              </div>
-              <div id="command" onclick="$('texter').focus();">
-                <textarea
-                  type="text"
-                  id="texter"
-                  onkeyup="typeIt(this, event)"
-                  onkeydown="typeIt(this, event); 
-                             moveIt(this.value.length, event)"
-                  onkeypress="typeIt(this, event);"
-                  autofocus
-                ></textarea>
-                <div id="liner">
-                  <span id="typer"></span><b class="cursor" id="cursor">█</b>
-                </div>
-              </div>
-            </div>
-          </div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <a class="nav-brand" href="#hero" aria-label="Muhammad Muntasir, back to top"><span class="nav-mark" aria-hidden="true"></span>Muntasir</a>
+  <nav class="nav-links" aria-label="Sections">
+    <a href="#stack">Stack</a>
+    <a href="#systems">Systems</a>
+    <a href="#experience">Experience</a>
+    <a href="#about">About</a>
+  </nav>
+  <div class="nav-end">
+    <button class="icon-btn" id="theme" type="button" aria-label="Switch colour theme">
+      <span class="theme-sun"><svg aria-hidden="true" class="ph" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M122,40V16a6,6,0,0,1,12,0V40a6,6,0,0,1-12,0Zm68,88a62,62,0,1,1-62-62A62.07,62.07,0,0,1,190,128Zm-12,0a50,50,0,1,0-50,50A50.06,50.06,0,0,0,178,128ZM59.76,68.24a6,6,0,1,0,8.48-8.48l-16-16a6,6,0,0,0-8.48,8.48Zm0,119.52-16,16a6,6,0,1,0,8.48,8.48l16-16a6,6,0,1,0-8.48-8.48ZM192,70a6,6,0,0,0,4.24-1.76l16-16a6,6,0,0,0-8.48-8.48l-16,16A6,6,0,0,0,192,70Zm4.24,117.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48-8.48ZM46,128a6,6,0,0,0-6-6H16a6,6,0,0,0,0,12H40A6,6,0,0,0,46,128Zm82,82a6,6,0,0,0-6,6v24a6,6,0,0,0,12,0V216A6,6,0,0,0,128,210Zm112-88H216a6,6,0,0,0,0,12h24a6,6,0,0,0,0-12Z"/></svg></span><span class="theme-moon"><svg aria-hidden="true" class="ph" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232.13,143.64a6,6,0,0,0-6-1.49A90.07,90.07,0,0,1,113.86,29.85a6,6,0,0,0-7.49-7.48A102.88,102.88,0,0,0,54.48,58.68,102,102,0,0,0,197.32,201.52a102.88,102.88,0,0,0,36.31-51.89A6,6,0,0,0,232.13,143.64Zm-42,48.29a90,90,0,0,1-126-126A90.9,90.9,0,0,1,99.65,37.66,102.06,102.06,0,0,0,218.34,156.35,90.9,90.9,0,0,1,190.1,191.93Z"/></svg></span>
+    </button>
+    <a class="pill pill-solid nav-cta" href="#contact">Email me</a>
+    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="sheet"><i></i><i></i></button>
+  </div>
+</header>
+
+<div class="sheet" id="sheet" hidden>
+  <nav aria-label="Menu">
+    <a href="#stack"><span>Stack</span></a>
+    <a href="#systems"><span>Systems</span></a>
+    <a href="#experience"><span>Experience</span></a>
+    <a href="#about"><span>About</span></a>
+    <a href="#contact"><span>Email me</span></a>
+  </nav>
+</div>
+
+<!-- Giant name sits behind the WebGL canvas so the object overlaps it. -->
+<div class="backdrop" aria-hidden="true"><div class="giant" id="giant">Muntasir</div></div>
+<div class="stage" id="stage" aria-hidden="true">
+  <img class="poster" id="poster" alt="" width="1600" height="1200" decoding="async" />
+  <canvas id="gl"></canvas>
+  <div class="portal" id="portal"></div>
+</div>
+
+<main id="main">
+
+<section class="hero" id="hero">
+  <h1 class="sr">Muhammad Muntasir, backend engineer</h1>
+  <div class="hero-foot">
+    <p class="hero-line">Backend engineer in Bogor. I build real-time, AI-integrated systems in Go that stay up under load.</p>
+    <div class="hero-cta">
+      <a class="pill pill-solid" href="#systems">See the systems<span class="pill-ico"><svg aria-hidden="true" class="ph" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M204.24,148.24l-72,72a6,6,0,0,1-8.48,0l-72-72a6,6,0,0,1,8.48-8.48L122,201.51V40a6,6,0,0,1,12,0V201.51l61.76-61.75a6,6,0,0,1,8.48,8.48Z"/></svg></span></a>
+      <a class="pill pill-ghost" href="#contact">Email me</a>
+    </div>
+  </div>
+</section>
+
+<section class="stack" id="stack" aria-label="The stack, layer by layer">
+  <div class="stack-sticky">
+    <div class="tags" id="tags" aria-hidden="true">
+      <span class="tag">Edge</span><span class="tag">Services</span><span class="tag">Messaging</span><span class="tag">Data</span><span class="tag">Ops</span>
+    </div>
+    <div class="chapters" id="chapters">
+      <article class="chapter">
+        <h2>Where the traffic lands.</h2>
+        <p>WebSocket and SSE services holding 10,000+ concurrent connections in production, with WebRTC through LiveKit carrying the video.</p>
+        <ul><li>WebSocket</li><li>SSE</li><li>WebRTC</li><li>Socket.io</li><li>REST</li></ul>
+      </article>
+      <article class="chapter">
+        <h2>Go, mostly.</h2>
+        <p>Microservices written with Clean Architecture and Domain-Driven Design. TypeScript when the job calls for it.</p>
+        <ul><li>Golang</li><li>Gin</li><li>Echo</li><li>Fiber</li><li>NestJS</li><li>Express</li></ul>
+      </article>
+      <article class="chapter">
+        <h2>Nothing waits in line.</h2>
+        <p>Slow work leaves the request path. AI models, transcription and reports run asynchronously behind a broker.</p>
+        <ul><li>Apache Kafka</li><li>RabbitMQ</li><li>Redis Pub/Sub</li></ul>
+      </article>
+      <article class="chapter">
+        <h2>Found in under a second.</h2>
+        <p>Elasticsearch across millions of documents, next to the relational and document stores that hold the truth.</p>
+        <ul><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>Redis</li><li>Elasticsearch</li></ul>
+      </article>
+      <article class="chapter">
+        <h2>Locked, and watched.</h2>
+        <p>Single sign-on, role-based access and end-to-end encryption, with metrics and logs on a screen before anyone complains.</p>
+        <ul><li>Keycloak</li><li>Prometheus</li><li>Grafana</li><li>Loki</li><li>Docker</li><li>CI/CD</li></ul>
+      </article>
+    </div>
+    <div class="rail" id="rail" role="group" aria-label="Jump to layer">
+      <button type="button" aria-label="Edge"></button><button type="button" aria-label="Services"></button><button type="button" aria-label="Messaging"></button><button type="button" aria-label="Data"></button><button type="button" aria-label="Ops"></button>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="story" aria-label="Background">
+  <p class="scrub" id="scrub">I started in 2020, moving a million-user reading app onto microservices. Since then I have built video consultations for doctors, encrypted chat, and the AI-integrated learning platforms that government agencies train on.</p>
+</section>
+
+<section class="poke" id="systems">
+  <div class="wrap poke-grid">
+    <div>
+      <h2 class="display" data-reveal>Six systems.<br />Go ahead, poke them.</h2>
+      <p class="lede" data-reveal>Small demos that run in your browser. The numbers beside them are from production.</p>
+    </div>
+    <button class="poke-slot" id="poke" type="button" tabindex="-1" aria-hidden="true"></button>
+  </div>
+</section>
+
+<div class="solid">
+<section class="systems">
+  <div class="wrap">
+    <div class="bento">
+
+      <article class="tile t-chat" data-reveal data-toy="chat">
+        <header><h3>End-to-end encrypted chat</h3><p>Built for Sentinel App. Type below: this one really is AES-GCM, in your browser.</p></header>
+        <div class="chat">
+          <label class="chat-in"><span class="sr">Your message</span><input id="chat-input" type="text" maxlength="60" value="Meet at the usual place" autocomplete="off" spellcheck="false" /></label>
+          <div class="chat-wire"><span class="mono-label">On the wire</span><code id="chat-cipher" aria-live="off"></code></div>
+          <div class="chat-out"><span id="chat-plain"></span></div>
         </div>
-    
-        <script src="./js/typing.js"></script>
-        <script src="./js/command.js"></script>
-        <script src="./js/main.js"></script>
+      </article>
+
+      <article class="tile t-fail" data-reveal data-toy="failover">
+        <header><div class="num">99.9<small>%</small></div><h3>Payments that find another way</h3><p>Dual gateways with automatic fallback, KBM App.</p></header>
+        <svg class="route" id="route" viewBox="0 0 320 130" role="img" aria-label="Payments flow through a primary gateway, or through the backup when it is down">
+          <path class="route-line" id="r-a" d="M28 65 C 90 65, 96 26, 160 26 S 230 65, 292 65" />
+          <path class="route-line" id="r-b" d="M28 65 C 90 65, 96 104, 160 104 S 230 65, 292 65" />
+          <circle class="route-node" cx="28" cy="65" r="7" /><circle class="route-node" cx="292" cy="65" r="7" />
+          <g id="n-a" class="gw"><rect x="116" y="11" width="88" height="30" rx="15" /><text x="160" y="31">Midtrans</text></g>
+          <g id="n-b" class="gw"><rect x="116" y="89" width="88" height="30" rx="15" /><text x="160" y="109">Xendit</text></g>
+          <g id="dots"></g>
+        </svg>
+        <div class="row">
+          <button class="pill pill-ghost pill-sm" id="fail-toggle" type="button" aria-pressed="false">Take Midtrans down</button>
+          <span class="mono-label" aria-live="polite"><span id="fail-count">0</span> paid, <span id="fail-lost">0</span> lost</span>
+        </div>
+      </article>
+
+      <article class="tile t-conn" data-reveal data-toy="connections">
+        <header><div class="num"><span id="conn-n">1,258</span></div><h3>Concurrent connections</h3><p>Drag it. Production runs at 10,000+.</p></header>
+        <canvas id="conn-canvas" class="fill-canvas"></canvas>
+        <label class="slider"><span class="sr">Connections</span><input id="conn-range" type="range" min="0" max="100" value="70" /></label>
+      </article>
+
+      <article class="tile t-queue" data-reveal data-toy="queue">
+        <header><div class="num">60<small>%</small></div><h3>Less manual review</h3><p>AI scoring runs behind RabbitMQ, so the submit button never waits for the model.</p></header>
+        <div class="q">
+          <div class="q-lane" id="q-lane" aria-hidden="true"></div>
+          <ol class="q-done" id="q-done" aria-live="polite"></ol>
+        </div>
+        <button class="pill pill-solid pill-sm" id="q-add" type="button">Submit an exam</button>
+      </article>
+
+      <article class="tile t-min" data-reveal data-toy="minutes">
+        <header><div class="num">40<small>%</small></div><h3>Faster after meetings</h3><p>LiveKit recording to transcript to minutes, built for Bappenas.</p></header>
+        <div class="wave" id="wave" aria-hidden="true"></div>
+        <div class="minutes" id="minutes" aria-live="polite"></div>
+        <button class="pill pill-ghost pill-sm" id="min-play" type="button"><svg aria-hidden="true" class="ph" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M231.36,116.19,87.28,28.06a14,14,0,0,0-14.18-.27A13.69,13.69,0,0,0,66,39.87V216.13a13.69,13.69,0,0,0,7.1,12.08,14,14,0,0,0,14.18-.27l144.08-88.13a13.82,13.82,0,0,0,0-23.62Zm-6.26,13.38L81,217.7a2,2,0,0,1-2.06,0,1.78,1.78,0,0,1-1-1.61V39.87a1.78,1.78,0,0,1,1-1.61A2.06,2.06,0,0,1,80,38a2,2,0,0,1,1,.31L225.1,126.43a1.82,1.82,0,0,1,0,3.14Z"/></svg>Play the meeting</button>
+      </article>
+
+      <article class="tile t-search" data-reveal data-toy="search">
+        <header><h3>Sub-second search, on this résumé</h3><p>In production it is Elasticsearch across millions of documents. Here, an index of my CV.</p></header>
+        <div class="search">
+          <label class="search-box"><svg aria-hidden="true" class="ph" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M228.24,219.76l-51.38-51.38a86.15,86.15,0,1,0-8.48,8.48l51.38,51.38a6,6,0,0,0,8.48-8.48ZM38,112a74,74,0,1,1,74,74A74.09,74.09,0,0,1,38,112Z"/></svg><span class="sr">Search the CV</span><input id="s-input" type="search" placeholder="Try kafka, payments, encryption" autocomplete="off" spellcheck="false" /><output id="s-time" class="mono-label"></output></label>
+          <div class="chips" id="s-chips"></div>
+          <ul class="s-results" id="s-results" aria-live="polite"></ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="clients" aria-label="Shipped for">
+  <div class="marquee" id="marquee" aria-hidden="true">
+    <div class="m-track">
+      <span>Direktorat Jenderal Pajak</span><span>Kemendagri BPSDM</span><span>Bappenas</span><span>Jamdatun</span><span>LearnXpert</span><span>SeeU</span><span>Workplaze</span><span>Sentinel App</span>
+    </div>
+  </div>
+  <p class="sr">Shipped for Direktorat Jenderal Pajak, Kemendagri BPSDM, Bappenas, Jamdatun, LearnXpert, SeeU, Workplaze and Sentinel App.</p>
+</section>
+
+<section class="exp" id="experience">
+  <div class="wrap exp-grid">
+    <aside class="exp-side">
+      <h2 class="sr">Experience</h2>
+      <div class="year" aria-hidden="true"><span id="year">2024</span></div>
+    </aside>
+    <div class="exp-list">
+      <article class="job" data-reveal data-year="2024">
+        <div class="job-top"><h3>AJARI Technologies</h3><span>Jul 2024 to present · Jakarta</span></div>
+        <p class="job-role">Backend Developer</p>
+        <ul>
+          <li>AI-integrated backends for LMS and video conferencing used by government agencies and corporate clients.</li>
+          <li>Automated scoring, PDF summarization, question generation and anti-cheating detection, cutting manual review by 60%.</li>
+          <li>Real-time services at 10,000+ concurrent connections, plus end-to-end encrypted chat and NFC login.</li>
+          <li>WebRTC meetings with AI transcription and generated minutes, 40% faster post-meeting work.</li>
+        </ul>
+        <p class="job-stack">Go, PostgreSQL, MongoDB, Redis, Elasticsearch, RabbitMQ, LiveKit, Keycloak</p>
+      </article>
+      <article class="job" data-reveal data-year="2024">
+        <div class="job-top"><h3>STG Auto Group</h3><span>Mar to Jul 2024 · California, remote</span></div>
+        <p class="job-role">Backend Developer, project based</p>
+        <ul>
+          <li>Concurrent report generation for lead deals on a used-car marketplace.</li>
+          <li>Gmail integration in Go on a new Clean Architecture codebase, surfaced in the leads dashboard.</li>
+        </ul>
+        <p class="job-stack">Go, MongoDB, MySQL, Redis</p>
+      </article>
+      <article class="job" data-reveal data-year="2022">
+        <div class="job-top"><h3>PT. YesDok Indonesia</h3><span>Jun 2022 to Mar 2024 · Jakarta</span></div>
+        <p class="job-role">Backend Developer</p>
+        <ul>
+          <li>Real-time backend for video-call health consultations, with live monitoring of every call.</li>
+          <li>Led payment features for API 3.0, including Reschedule through pending funds.</li>
+          <li>Helped build API 4.0 in Go and NestJS, and brought in unit testing.</li>
+          <li>Main backend contact for hospital partners in Australia.</li>
+        </ul>
+        <p class="job-stack">Go, NestJS, TypeScript, MongoDB, MySQL, Socket.io, Midtrans</p>
+      </article>
+      <article class="job" data-reveal data-year="2021">
+        <div class="job-top"><h3>DDTC Indonesia</h3><span>Dec 2021 to Jun 2022 · Jakarta</span></div>
+        <p class="job-role">Backend Developer</p>
+        <ul>
+          <li>Server side of DDTC News, DDTC Academy and internal tax PMS, moved toward Clean Architecture.</li>
+          <li>Containerized new microservices with Docker.</li>
+        </ul>
+        <p class="job-stack">Go, NestJS, Redis, MySQL, Docker</p>
+      </article>
+      <article class="job" data-reveal data-year="2020">
+        <div class="job-top"><h3>KBM App</h3><span>Jul 2020 to Dec 2021 · Bogor</span></div>
+        <p class="job-role">Backend Developer, PT. Sembilan Sembilan Media</p>
+        <ul>
+          <li>Rebuilt APIs as Moleculer microservices for a platform with 1 million users.</li>
+          <li>Dual gateway payments on Midtrans and Xendit with fallback, 99.9% success rate.</li>
+          <li>Migrated data from MySQL to MongoDB.</li>
+        </ul>
+        <p class="job-stack">Moleculer, Node.js, MongoDB, MySQL, Redis, Kafka</p>
+      </article>
+      <p class="job-note" data-year="2020">Also: a point-of-sale API for a client in the UAE, three months in 2022.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <figure class="ph-frame f1" data-drift="50"><img data-parallax="-.12" src="./img/portrait.jpg" alt="Portrait of Muhammad Muntasir" width="900" height="1200" loading="lazy" /></figure>
+    <div class="about-copy">
+      <h2 class="display" data-reveal>Boring on the inside, on purpose.</h2>
+      <p class="lede" data-reveal>The best compliment a backend gets is silence. I like clean boundaries, queues in the right places, and dashboards that tell me first. AI tools are part of how I work, so the iterations come faster.</p>
+      <dl class="facts" data-reveal>
+        <div><dt>Education</dt><dd>Informatics Engineering, STMIK Dharma Negara</dd></div>
+        <div><dt>Based in</dt><dd>Bogor, Indonesia</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+</div>
+
+<section class="contact" id="contact">
+  <h2 class="contact-word" id="contact-word">Let's talk.</h2>
+  <div class="contact-row">
+    <a class="pill pill-solid pill-lg" href="mailto:muhmunt@gmail.com">Email me<span class="pill-ico"><svg aria-hidden="true" class="ph" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M198,64V168a6,6,0,0,1-12,0V78.48L68.24,196.24a6,6,0,0,1-8.48-8.48L177.52,70H88a6,6,0,0,1,0-12H192A6,6,0,0,1,198,64Z"/></svg></span></a>
+    <button class="pill pill-ghost pill-lg" id="copy" type="button" data-copy="muhmunt@gmail.com"><span id="copy-ico"><svg aria-hidden="true" class="ph" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M216,34H88a6,6,0,0,0-6,6V82H40a6,6,0,0,0-6,6V216a6,6,0,0,0,6,6H168a6,6,0,0,0,6-6V174h42a6,6,0,0,0,6-6V40A6,6,0,0,0,216,34ZM162,210H46V94H162Zm48-48H174V88a6,6,0,0,0-6-6H94V46H210Z"/></svg></span><span id="copy-txt">muhmunt@gmail.com</span></button>
+  </div>
+  <footer class="foot">
+    <span>Muhammad Muntasir, 2026</span>
+    <nav aria-label="Elsewhere">
+      <a href="https://github.com/muhmunt" rel="me noopener" target="_blank"><svg aria-hidden="true" class="ph" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M206.13,75.92A57.79,57.79,0,0,0,201.2,29a6,6,0,0,0-5.2-3,57.77,57.77,0,0,0-47,24H123A57.77,57.77,0,0,0,76,26a6,6,0,0,0-5.2,3,57.79,57.79,0,0,0-4.93,46.92A55.88,55.88,0,0,0,58,104v8a54.06,54.06,0,0,0,50.45,53.87A37.85,37.85,0,0,0,98,192v10H72a26,26,0,0,1-26-26A38,38,0,0,0,8,138a6,6,0,0,0,0,12,26,26,0,0,1,26,26,38,38,0,0,0,38,38H98v18a6,6,0,0,0,12,0V192a26,26,0,0,1,52,0v40a6,6,0,0,0,12,0V192a37.85,37.85,0,0,0-10.45-26.13A54.06,54.06,0,0,0,214,112v-8A55.88,55.88,0,0,0,206.13,75.92ZM202,112a42,42,0,0,1-42,42H112a42,42,0,0,1-42-42v-8a43.86,43.86,0,0,1,7.3-23.69,6,6,0,0,0,.81-5.76,45.85,45.85,0,0,1,1.43-36.42,45.85,45.85,0,0,1,35.23,21.1A6,6,0,0,0,119.83,62h32.34a6,6,0,0,0,5.06-2.76,45.83,45.83,0,0,1,35.23-21.11,45.85,45.85,0,0,1,1.43,36.42,6,6,0,0,0,.79,5.74A43.78,43.78,0,0,1,202,104Z"/></svg>GitHub</a>
+      <a href="https://www.linkedin.com/in/muhammadmuntasir/" rel="me noopener" target="_blank"><svg aria-hidden="true" class="ph" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M216,26H40A14,14,0,0,0,26,40V216a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V40A14,14,0,0,0,216,26Zm2,190a2,2,0,0,1-2,2H40a2,2,0,0,1-2-2V40a2,2,0,0,1,2-2H216a2,2,0,0,1,2,2ZM94,112v64a6,6,0,0,1-12,0V112a6,6,0,0,1,12,0Zm88,28v36a6,6,0,0,1-12,0V140a22,22,0,0,0-44,0v36a6,6,0,0,1-12,0V112a6,6,0,0,1,12,0v2.11A34,34,0,0,1,182,140ZM98,84A10,10,0,1,1,88,74,10,10,0,0,1,98,84Z"/></svg>LinkedIn</a>
+      <a href="./Muhammad_Muntasir_CV.pdf" download><svg aria-hidden="true" class="ph" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222,144v64a6,6,0,0,1-6,6H40a6,6,0,0,1-6-6V144a6,6,0,0,1,12,0v58H210V144a6,6,0,0,1,12,0Zm-98.24,4.24a6,6,0,0,0,8.48,0l40-40a6,6,0,0,0-8.48-8.48L134,129.51V32a6,6,0,0,0-12,0v97.51L92.24,99.76a6,6,0,0,0-8.48,8.48Z"/></svg>CV</a>
+    </nav>
+  </footer>
+</section>
+</main>
 </body>
 </html>
